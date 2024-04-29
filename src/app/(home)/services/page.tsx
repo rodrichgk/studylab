@@ -41,9 +41,9 @@ const servicesData = [
 
 export default function ServicesPage() {
   return (
-    <div className="p-8">
+    <div className="container mx-auto max-w-3xl p-8">
       <h1 className="text-center text-3xl font-bold mb-6">Our Services</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {servicesData.map((service) => (
           <Card key={service.title} className="relative overflow-hidden">
             <CardFooter className="flex flex-col items-center text-center p-4 z-10">

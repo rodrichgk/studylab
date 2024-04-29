@@ -14,7 +14,7 @@ const HNavbar = () => {
     <Navbar
       isBordered
       maxWidth={"xl"}
-      shouldHideOnScroll={true}
+      shouldHideOnScroll={false}
       motionProps={{ initial: "hidden", animate: "visible" }}
       disableAnimation={false}
     >
@@ -25,22 +25,22 @@ const HNavbar = () => {
         </Link>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>
+        <NavbarItem isActive>
           <Link color="foreground" href="/services">
             Services
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="/about" aria-current="page">
+          <Link href="/about" color="foreground">
             About Us
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem isActive>
           <Link color="foreground" href="/integrations">
             Integrations
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem isActive>
           <Link color="foreground" href="/faq">
             FAQ's
           </Link>
