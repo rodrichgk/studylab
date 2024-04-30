@@ -37,6 +37,13 @@ const servicesData = [
     icon: <BookText />,
     image: "/icons/resource_accessibility_icon.png",
   },
+  {
+    title: "Collaboration Tools",
+    description:
+      "Facilitate teamwork and communication with real-time collaboration tools. Enhance group projects and assignments.",
+    icon: <BookText />,
+    image: "/icons/resource_accessibility_icon.png",
+  },
 ];
 
 export default function ServicesPage() {
@@ -45,7 +52,10 @@ export default function ServicesPage() {
       <h1 className="text-center text-3xl font-bold mb-6">Our Services</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {servicesData.map((service) => (
-          <Card key={service.title} className="relative overflow-hidden">
+          <Card
+            key={service.title}
+            className="relative overflow-hidden duration-500 ease-in-out transform hover:scale-105 transition-shadow hover:shadow-2xl"
+          >
             <CardFooter className="flex flex-col items-center text-center p-4 z-10">
               <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
                 {service.icon}

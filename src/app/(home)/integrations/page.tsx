@@ -108,7 +108,10 @@ const IntegrationsPage: React.FC = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {integrationsData.map((integration) => (
-          <Card key={integration.id}>
+          <Card
+            key={integration.id}
+            className="transition duration-500 ease-in-out transform hover:scale-105"
+          >
             <CardBody className="flex flex-col items-center text-center p-4">
               <img
                 src={integration.icon}
