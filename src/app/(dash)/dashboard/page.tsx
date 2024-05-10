@@ -10,7 +10,7 @@ import React from "react";
 
 const Dashboard = () => {
   return (
-    <div className="container my-auto h-full">
+    <div className="container my-auto h-full overflow-auto">
       <section className="flex items-center justify-between rounded-lg w-full mb-8">
         <div className="flex items-center space-x-4 mr-96">
           <Avatar
@@ -82,7 +82,7 @@ const Dashboard = () => {
         </div>
       </section>
 
-      <section className="performance-overview grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 h-1/3">
+      <section className="performance-overview grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 h-2/4">
         <div className="p-4 bg-gradient-to-r from-blue-200 to-blue-400 rounded-3xl shadow-md">
           <h3 className="text-xl font-semibold">Attendance Overview</h3>
         </div>

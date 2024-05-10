@@ -35,15 +35,15 @@ const AboutPage = () => {
       role: "Developer and co-founder",
       photo: "",
       content:
-        "Developer focused on backend systems and database management. Loves coding at night.",
+        "I'm a full-stack developer and co-founder of the project. I enjoy building scalable applications and solving complex problems. I'm an grade was in electronics and telecommunications engineering but i'm also passionate about web development. \n I'm from the Republic of Congo and i'm currently living in France. I'm a big fan of open-source software and i'm always looking for ways to contribute to the community.",
     },
     {
       id: "chabrey",
       name: "Chabrey MAKITA",
-      role: "Communications Specialist",
+      role: "Communications Specialist and co-founder",
       photo: "",
       content:
-        "Communications Specialist, enhancing our outreach and user engagement. Enjoys podcasting about educational technology.",
+        "Communications Specialist, enhancing our outreach and user engagement. Enjoys podcasting about educational technology. Passionate about making education accessible to all. I'm also from the Republic of Congo and majoring in ... in Cameroon. I'm a big fan of open-source software and i'm always looking for ways to contribute to the community.",
     },
     {
       id: "hugor",
@@ -67,10 +67,7 @@ const AboutPage = () => {
 
   return (
     <div className="flex w-full flex-col items-center justify-center">
-      <Tabs
-        aria-label="About Us Sections"
-        items={[...teamMembers, ...missionContent]}
-      >
+      <Tabs aria-label="About Us Sections" items={[...teamMembers]}>
         {(item: TeamMember | MissionContent) => (
           <Tab key={item.id} title={"name" in item ? item.name : item.label}>
             <Card className="p-10 max-w-3xl">

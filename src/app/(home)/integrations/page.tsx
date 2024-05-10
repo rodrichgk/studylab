@@ -110,7 +110,7 @@ const IntegrationsPage: React.FC = () => {
         {integrationsData.map((integration) => (
           <Card
             key={integration.id}
-            className="transition duration-500 ease-in-out transform hover:scale-105"
+            className="transition duration-500 ease-in-out transform hover:scale-105 dark:bg-gray-700"
           >
             <CardBody className="flex flex-col items-center text-center p-4">
               <img

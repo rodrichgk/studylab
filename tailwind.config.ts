@@ -15,9 +15,12 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        'studylabs-primary-bg':'rgb(249 250 251)', 
+      }
     },
   },
-  darkMode: "class",
+  darkMode: "media",
   plugins: [nextui()],
 };
 export default config;

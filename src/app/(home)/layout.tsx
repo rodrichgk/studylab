@@ -22,7 +22,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className="bg-gray-100 font-inter">
+      <body className="font-inter">
         <SessionProvider session={session}>
           <Providers>
             <HNavbar />

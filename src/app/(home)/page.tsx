@@ -3,7 +3,7 @@ import { Button } from "@nextui-org/react";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-50">
+    <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Image
         src="/logo/studylab_logo.svg"
         alt="Study Lab Logo"
@@ -28,14 +28,14 @@ export default function Home() {
 
       <section className="my-16 w-full">
         <div className="flex flex-wrap justify-center gap-10">
-          <div className="group p-6 shadow-lg rounded-lg bg-white transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl">
+          <div className="group p-6 shadow-lg rounded-lg bg-white dark:bg-gray-700 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl">
             <h3 className="text-2xl font-bold">Real-Time Collaboration</h3>
             <p>
               Collaborate on projects and assignments in real-time, allowing for
               seamless teamwork regardless of location.
             </p>
           </div>
-          <div className="group p-6 shadow-lg rounded-lg bg-white transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl">
+          <div className="group p-6 shadow-lg rounded-lg bg-white dark:bg-gray-700 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl">
             <h3 className="text-2xl font-bold">
               Integrated Learning Materials
             </h3>
@@ -44,7 +44,7 @@ export default function Home() {
               and books tailored to your educational needs.
             </p>
           </div>
-          <div className="group p-6 shadow-lg rounded-lg bg-white transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl">
+          <div className="group p-6 shadow-lg rounded-lg bg-white dark:bg-gray-700 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl">
             <h3 className="text-2xl font-bold">Tracking and Analytics</h3>
             <p>
               Monitor your progress with advanced tracking tools that help you
@@ -58,7 +58,7 @@ export default function Home() {
         <h2 className="text-3xl text-center font-semibold">
           Hear From Our Users
         </h2>
-        <div className="mt-8 px-6 py-4 bg-white rounded-lg shadow-lg">
+        <div className="mt-8 px-6 py-4 bg-white dark:bg-gray-700 rounded-lg shadow-lg">
           <p className="italic">
             "StudyLabs has revolutionized the way I manage my classes and
             interact with students. It's an indispensable tool for any educator

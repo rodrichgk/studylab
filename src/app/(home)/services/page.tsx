@@ -54,7 +54,7 @@ export default function ServicesPage() {
         {servicesData.map((service) => (
           <Card
             key={service.title}
-            className="relative overflow-hidden duration-500 ease-in-out transform hover:scale-105 transition-shadow hover:shadow-2xl"
+            className="relative overflow-hidden duration-500 dark:bg-gray-700 ease-in-out transform hover:scale-105 transition-shadow hover:shadow-2xl"
           >
             <CardFooter className="flex flex-col items-center text-center p-4 z-10">
               <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
